@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov  7 06:03:01 2018
+
+@author: AdeolaOlalekan
+"""
+{% extends 'blogs/base.html' %}
+{% block content %}
+    <form method="post"class="post-form">{% csrf_token %}
+      {{ user_form.as_p }}
+      {{ profileForm.as_p }}
+      <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
