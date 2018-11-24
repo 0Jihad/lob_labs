@@ -24,14 +24,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'li%nyz2g7sx$ca7ua!a97fl&-hwcvv)i$fp5o)g!&ygf&e%bw7'
 import os
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 't&&vk12ttc#39(f=5n@k)kem=pm8vgu4_u*#^)qmtytl-uq*4!')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['weety.herokuapp.com', '127.0.0.1']
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
@@ -77,7 +77,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         #'DIRS': [os.path.join(BASE_DIR, 'templates')],
-        'DIRS' : [r'C:/Users/mysites/blogs/templates/blogs/post_list.html',],
+        'DIRS' : [r'C:/Users/hp/mysites/blogs/templates/blogs/post_list.html',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
