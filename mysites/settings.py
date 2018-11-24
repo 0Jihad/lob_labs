@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blogs',
     'social_django',
+    'django_extensions'
     #'users.apps.UsersConfig', # new
     
 ]
